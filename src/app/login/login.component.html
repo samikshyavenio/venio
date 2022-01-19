@@ -1,0 +1,43 @@
+<div class="grid grid-cols-1 h-screen sm:grid-cols-2">
+    <div class="bg-blue-500 inline-flex justify-center items-center">
+        <img src="./../assets/img/login-cover.png" alt="">
+    </div>
+    <div class="inline-flex justify-center items-center">
+        <div class="w-3/5">
+            <div class="logo text-center w-1/2 mx-auto">
+                <img src="./../assets/img/logo.PNG" alt="">
+                <div class="text-right text-green-500 text-sm">v9.1.2</div>
+            </div>           
+            <form>
+                <fieldset class="k-form-fieldset">
+                    <legend class="text-center text-gray-500 tet uppercase">welome to venio system</legend>
+                    <kendo-formfield>
+                        <kendo-label [for]="firstName" text="First Name"></kendo-label>
+                        <input formControlName="firstName" kendoTextBox #firstName required />
+
+                        <kendo-formhint>Your first name</kendo-formhint>
+                        <kendo-formerror class="text-red-600">Error: First name is required</kendo-formerror>
+                    </kendo-formfield>
+
+                    <kendo-formfield>
+                        <kendo-label [for]="lastName" text="Last Name"></kendo-label>
+                        <input formControlName="lastName" kendoTextBox #lastName required />
+
+                        <kendo-formhint>Your last name</kendo-formhint>
+                        <kendo-formerror class="text-red-600">Error: Last name is required</kendo-formerror>
+                    </kendo-formfield>
+
+                    <div class="text-right">
+                        <a href="" class="text-gray-500 uppercase">Forgot password</a>
+                    </div>
+
+                    <div class="k-form-buttons text-center">
+                        <button kendoButton look="default" class="bg-blue-600 text-white px-8 py-2 rounded-full mx-auto">LOGIN</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            
+        </div>
+    </div>
+</div>
